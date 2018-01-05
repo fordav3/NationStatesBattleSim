@@ -18,9 +18,6 @@
         <properties/>
         <border type="none"/>
         <children>
-<<<<<<< HEAD
-          <grid id="27dc6" binding="panel1" layout-manager="GridLayoutManager" row-count="16" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-=======
           <toolbar id="8572f" binding="toolBar">
             <constraints border-constraint="North"/>
             <properties/>
@@ -40,8 +37,7 @@
               </component>
             </children>
           </toolbar>
-          <grid id="27dc6" binding="panel1" layout-manager="GridLayoutManager" row-count="18" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
->>>>>>> origin/master
+          <grid id="27dc6" binding="panel1" layout-manager="GridLayoutManager" row-count="16" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints border-constraint="Center"/>
             <properties/>
@@ -56,6 +52,36 @@
                   <toolTipText value="Input the name for team on"/>
                 </properties>
               </component>
+              <vspacer id="e3edc">
+                <constraints>
+                  <grid row="14" column="1" row-span="2" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="a8202" class="javax.swing.JTextField" binding="t1Name">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <grid id="ba66d" binding="outputPane" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="14" column="2" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="2ae2d" class="javax.swing.JButton" binding="runButton">
+                    <constraints border-constraint="South"/>
+                    <properties>
+                      <text value="Run Simulation"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
               <component id="ce5cb" class="javax.swing.JLabel" binding="team1Size">
                 <constraints>
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -64,343 +90,51 @@
                   <text value="Team One Force count"/>
                 </properties>
               </component>
-              <component id="447c8" class="javax.swing.JLabel" binding="teamOneMorale">
+              <component id="b1881" class="javax.swing.JTextField" binding="t1SizeInput">
                 <constraints>
-                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Team One Morale"/>
-                </properties>
-              </component>
-<<<<<<< HEAD
-=======
-              <component id="87726" class="javax.swing.JTextField" binding="t1MoraleInput">
-                <constraints>
-                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
                   </grid>
                 </constraints>
-                <properties/>
-              </component>
->>>>>>> origin/master
-              <component id="dc94d" class="javax.swing.JLabel" binding="t1labels">
-                <constraints>
-                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
                 <properties>
-                  <text value="Team One Training Rating"/>
-                </properties>
-              </component>
-              <component id="997f4" class="javax.swing.JLabel" binding="eff">
-                <constraints>
-                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Team One Combat Experience"/>
-                </properties>
-              </component>
-              <component id="a8f60" class="javax.swing.JLabel" binding="nword">
-                <constraints>
-                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Team One Technology"/>
-                </properties>
-              </component>
-              <component id="80f9b" class="javax.swing.JLabel" binding="ugh">
-                <constraints>
-                  <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Team One Logistics"/>
-                </properties>
-              </component>
-              <component id="efea3" class="javax.swing.JLabel" binding="teamOneIntelLabel">
-                <constraints>
-                  <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Team One Intel"/>
+                  <text value=""/>
                 </properties>
               </component>
               <component id="5a23c" class="javax.swing.JLabel" binding="team2">
                 <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <text value="Team Two Name"/>
                 </properties>
               </component>
+              <component id="352a6" class="javax.swing.JTextField" binding="t2Name">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
               <component id="580fa" class="javax.swing.JLabel" binding="t2SizeInput">
                 <constraints>
-                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <text value="Team Two Force Count"/>
                 </properties>
               </component>
-              <component id="832d2" class="javax.swing.JLabel" binding="no">
+              <component id="6de70" class="javax.swing.JTextField" binding="t2ForceCount">
                 <constraints>
-                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
                 </constraints>
-                <properties>
-                  <text value="Team Two Morale"/>
-                </properties>
-              </component>
-              <component id="b40e2" class="javax.swing.JLabel" binding="cantSayTheNWord">
-                <constraints>
-                  <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Team Two Training Rating"/>
-                </properties>
-              </component>
-              <component id="8161b" class="javax.swing.JLabel" binding="plzgo">
-                <constraints>
-                  <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Team Two Combat Experience"/>
-                </properties>
-              </component>
-              <component id="2e9cf" class="javax.swing.JLabel" binding="noMoreVariablesplz">
-                <constraints>
-                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Team Two Technology"/>
-                </properties>
-              </component>
-<<<<<<< HEAD
-              <component id="bf57d" class="javax.swing.JLabel" binding="noplzno">
-                <constraints>
-                  <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Team Two Logistics"/>
-                </properties>
-              </component>
-              <component id="3a9dd" class="javax.swing.JLabel" binding="notavirus">
-                <constraints>
-                  <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Team Two Intel"/>
-                </properties>
-              </component>
-              <component id="daa6e" class="javax.swing.JSlider" binding="t1m">
-                <constraints>
-                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="2" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <minimum value="1"/>
-                  <value value="5"/>
-                </properties>
-              </component>
-              <component id="483ed" class="javax.swing.JSlider" binding="t1t">
-                <constraints>
-                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="2" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <minimum value="1"/>
-                  <value value="5"/>
-                </properties>
-              </component>
-              <component id="57eb2" class="javax.swing.JSlider" binding="t1tr">
-                <constraints>
-                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="2" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <minimum value="1"/>
-                  <value value="5"/>
-                </properties>
-              </component>
-              <component id="9b567" class="javax.swing.JSlider" binding="t1ce">
-                <constraints>
-                  <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="2" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <minimum value="1"/>
-                  <value value="5"/>
-                </properties>
-              </component>
-              <component id="4bf36" class="javax.swing.JSlider" binding="t1l">
-                <constraints>
-                  <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="2" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <minimum value="1"/>
-                  <value value="5"/>
-                </properties>
-              </component>
-              <component id="373df" class="javax.swing.JSlider" binding="t1i">
-                <constraints>
-                  <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="2" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <minimum value="1"/>
-                  <value value="5"/>
-                </properties>
-              </component>
-              <component id="6f239" class="javax.swing.JSlider" binding="t2m">
-                <constraints>
-                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="2" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <minimum value="1"/>
-                  <value value="5"/>
-                </properties>
-              </component>
-              <component id="a9041" class="javax.swing.JSlider" binding="t2t">
-                <constraints>
-                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="2" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <minimum value="1"/>
-                  <value value="5"/>
-=======
-              <component id="b40e2" class="javax.swing.JLabel" binding="cantSayTheNWord">
-                <constraints>
-                  <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Team Two Training Rating"/>
-                </properties>
-              </component>
-              <component id="8161b" class="javax.swing.JLabel" binding="plzgo">
-                <constraints>
-                  <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Team Two Combat Experience"/>
-                </properties>
-              </component>
-              <component id="2e9cf" class="javax.swing.JLabel" binding="noMoreVariablesplz">
-                <constraints>
-                  <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Team Two Technology"/>
-                </properties>
-              </component>
-              <component id="bf57d" class="javax.swing.JLabel" binding="noplzno">
-                <constraints>
-                  <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Team Two Logistics"/>
-                </properties>
-              </component>
-              <component id="3a9dd" class="javax.swing.JLabel" binding="notavirus">
-                <constraints>
-                  <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Team Two Intel"/>
-                </properties>
-              </component>
-              <component id="3de62" class="javax.swing.JSlider" binding="t2Tech">
-                <constraints>
-                  <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <value value="5"/>
-                  <valueIsAdjusting value="false"/>
-                </properties>
-              </component>
-              <component id="1eca5" class="javax.swing.JSlider" binding="t1Tech">
-                <constraints>
-                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <value value="5"/>
-                </properties>
-              </component>
-              <component id="46dca" class="javax.swing.JSlider" binding="t1CE">
-                <constraints>
-                  <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <value value="5"/>
-                </properties>
-              </component>
-              <component id="d39cf" class="javax.swing.JSlider" binding="t1L">
-                <constraints>
-                  <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <value value="5"/>
-                </properties>
-              </component>
-              <component id="67e09" class="javax.swing.JSlider" binding="t1I">
-                <constraints>
-                  <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <value value="5"/>
-                </properties>
-              </component>
-              <component id="2adff" class="javax.swing.JSlider" binding="t1TR">
-                <constraints>
-                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <value value="5"/>
-                </properties>
-              </component>
-              <component id="1c6db" class="javax.swing.JSlider" binding="t2CE">
-                <constraints>
-                  <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <value value="5"/>
-                </properties>
-              </component>
-              <component id="e163c" class="javax.swing.JSlider" binding="t2L">
-                <constraints>
-                  <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <value value="5"/>
-                </properties>
-              </component>
-              <component id="6c061" class="javax.swing.JSlider" binding="t2I">
-                <constraints>
-                  <grid row="15" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <value value="5"/>
-                </properties>
-              </component>
-              <component id="ef59e" class="javax.swing.JSlider" binding="t2TR">
-                <constraints>
-                  <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <maximum value="10"/>
-                  <value value="5"/>
-                </properties>
+                <properties/>
               </component>
               <component id="8c00f" class="javax.swing.JComboBox" binding="homeTeam">
                 <constraints>
-                  <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <model>
@@ -409,86 +143,217 @@
                     <item value="Team One"/>
                     <item value="Team Two"/>
                   </model>
->>>>>>> origin/master
                 </properties>
               </component>
-              <component id="b4df" class="javax.swing.JSlider" binding="t2tr">
+              <component id="a8f60" class="javax.swing.JLabel" binding="nword">
                 <constraints>
-                  <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="2" use-parent-layout="false"/>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Team One Technology"/>
+                </properties>
+              </component>
+              <component id="a7ccf" class="javax.swing.JComboBox" binding="t1Tech">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="==Select=="/>
+                    <item value="Stone Age"/>
+                    <item value="Bronze Age"/>
+                    <item value="Iron Age"/>
+                    <item value="Medieval"/>
+                    <item value="Age of Sail"/>
+                    <item value="Industrial Age"/>
+                    <item value="Mechanized Age"/>
+                    <item value="Nuclear Age"/>
+                    <item value="Digital Age"/>
+                    <item value="Post-Modern Age"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="dc94d" class="javax.swing.JLabel" binding="t1labels">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Team One Training Rating"/>
+                </properties>
+              </component>
+              <component id="fae49" class="javax.swing.JComboBox" binding="t1TR">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="== Select =="/>
+                    <item value="Conscript"/>
+                    <item value="Light"/>
+                    <item value="Basic"/>
+                    <item value="Standard"/>
+                    <item value="Intense"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="997f4" class="javax.swing.JLabel" binding="eff">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Team One Combat Experience"/>
+                </properties>
+              </component>
+              <component id="46dca" class="javax.swing.JSlider" binding="t1CE">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <maximum value="10"/>
-                  <minimum value="1"/>
                   <value value="5"/>
                 </properties>
               </component>
-              <component id="7850c" class="javax.swing.JSlider" binding="t2ce">
+              <component id="80f9b" class="javax.swing.JLabel" binding="ugh">
                 <constraints>
-                  <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="2" use-parent-layout="false"/>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Team One Logistics"/>
+                </properties>
+              </component>
+              <component id="d39cf" class="javax.swing.JSlider" binding="t1L">
+                <constraints>
+                  <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <maximum value="10"/>
-                  <minimum value="1"/>
                   <value value="5"/>
                 </properties>
               </component>
-              <component id="d8a60" class="javax.swing.JSlider" binding="t2l">
+              <component id="efea3" class="javax.swing.JLabel" binding="teamOneIntelLabel">
                 <constraints>
-                  <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="2" use-parent-layout="false"/>
+                  <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Team One Intel"/>
+                </properties>
+              </component>
+              <component id="67e09" class="javax.swing.JSlider" binding="t1I">
+                <constraints>
+                  <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <maximum value="10"/>
-                  <minimum value="1"/>
                   <value value="5"/>
                 </properties>
               </component>
-              <component id="f020c" class="javax.swing.JSlider" binding="t2i">
+              <component id="2e9cf" class="javax.swing.JLabel" binding="noMoreVariablesplz">
                 <constraints>
-                  <grid row="15" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="2" use-parent-layout="false"/>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Team Two Technology"/>
+                </properties>
+              </component>
+              <component id="55553" class="javax.swing.JComboBox" binding="t2Tech">
+                <constraints>
+                  <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="==Select=="/>
+                    <item value="Stone Age"/>
+                    <item value="Bronze Age"/>
+                    <item value="Iron Age"/>
+                    <item value="Medieval"/>
+                    <item value="Age of Sail"/>
+                    <item value="Industrial Age"/>
+                    <item value="Mechanized Age"/>
+                    <item value="Nuclear Age"/>
+                    <item value="Digital Age"/>
+                    <item value="Post-Modern Age"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="b40e2" class="javax.swing.JLabel" binding="cantSayTheNWord">
+                <constraints>
+                  <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Team Two Training Rating"/>
+                </properties>
+              </component>
+              <component id="f5f40" class="javax.swing.JComboBox" binding="t2TR">
+                <constraints>
+                  <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="== Select =="/>
+                    <item value="Conscript"/>
+                    <item value="Light"/>
+                    <item value="Basic"/>
+                    <item value="Standard"/>
+                    <item value="Intense"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="8161b" class="javax.swing.JLabel" binding="plzgo">
+                <constraints>
+                  <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Team Two Combat Experience"/>
+                </properties>
+              </component>
+              <component id="1c6db" class="javax.swing.JSlider" binding="t2CE">
+                <constraints>
+                  <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <maximum value="10"/>
-                  <minimum value="1"/>
                   <value value="5"/>
                 </properties>
               </component>
-              <component id="3f2c0" class="javax.swing.JTextField" binding="t1name">
+              <component id="bf57d" class="javax.swing.JLabel" binding="noplzno">
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="-1"/>
-                  </grid>
+                  <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <text value="Team Two Logistics"/>
+                </properties>
               </component>
-              <component id="7b40b" class="javax.swing.JTextField" binding="t2name">
+              <component id="e163c" class="javax.swing.JSlider" binding="t2L">
                 <constraints>
-                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="-1"/>
-                  </grid>
+                  <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <maximum value="10"/>
+                  <value value="5"/>
+                </properties>
               </component>
-              <component id="f657e" class="javax.swing.JTextField" binding="t2fc">
+              <component id="3a9dd" class="javax.swing.JLabel" binding="notavirus">
                 <constraints>
-                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="-1"/>
-                  </grid>
+                  <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <text value="Team Two Intel"/>
+                </properties>
               </component>
-              <component id="da6bb" class="javax.swing.JTextField" binding="t1fc">
+              <component id="6c061" class="javax.swing.JSlider" binding="t2I">
                 <constraints>
-                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="-1"/>
-                  </grid>
+                  <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <maximum value="10"/>
+                  <value value="5"/>
+                </properties>
               </component>
             </children>
           </grid>
         </children>
       </grid>
-      <grid id="2dc6c" binding="outputPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="2dc6c" binding="outputPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <tabbedpane title="Output"/>
@@ -496,27 +361,16 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="2ae2d" class="javax.swing.JButton" binding="runButton">
+          <component id="aa4b2" class="javax.swing.JTextArea" binding="outputArea">
             <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
             </constraints>
             <properties>
-              <text value="Run Simulation"/>
+              <text value="Uhhhhh"/>
             </properties>
           </component>
-          <scrollpane id="1db98" binding="scrollPane">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties/>
-            <border type="none"/>
-            <children>
-              <component id="b95c4" class="javax.swing.JTextArea" binding="outputText">
-                <constraints/>
-                <properties/>
-              </component>
-            </children>
-          </scrollpane>
         </children>
       </grid>
       <grid id="102e" binding="optinonPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">

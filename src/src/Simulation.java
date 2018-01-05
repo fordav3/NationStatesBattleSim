@@ -1,5 +1,9 @@
 package src;
 
+import javax.swing.*;
+
+import static javax.swing.JOptionPane.YES_NO_OPTION;
+
 /**
  * Created by Forrest on 2/28/2015.
  */
@@ -28,7 +32,7 @@ public class Simulation {
 
         Outcome finalOutcome;
         OutcomeType outcome = OutcomeType.DRAW;
-
+        do {
             rand = (int) (Math.random() * 1000);
             int one, two;
             score[homeTeam] += 5;
@@ -80,61 +84,43 @@ public class Simulation {
             System.out.println("Rand = " + rand);
             finalOutcome = new Outcome();
             if (rand >= ratio * 1000) {
+
+
                 winner = 1;
                 loser = 0;
-<<<<<<< HEAD
-               System.out.println(team[0].kill((int) (Math.abs(Math.random() * ((double)team[0].getForces() * (1-ratio))))));
-=======
-                System.out.println(team[0].kill((int) (Math.random() * (((double) team[1].getForces() / (double) team[0].getForces())))));
->>>>>>> origin/master
+                System.out.println("Killing " + team[0].kill((int) (Math.random() * (((double) team[1].getForces() / (double) team[0].getForces())))) + " from " + team[0].getName());
                 outcome = OutcomeType.LOSE;
             } else if (rand < ratio * 1000) {
 
                 winner = 0;
                 loser = 1;
-<<<<<<< HEAD
-                System.out.println(team[1].kill((int) (Math.abs(Math.random() * ((double)team[1].getForces() * (1-ratio))))));
-=======
-                System.out.println(team[1].kill((int) (Math.random() * ((double) ((double) team[0].getForces() / (double) team[1].getForces())))));
->>>>>>> origin/master
+                System.out.println("Killing" + team[1].kill((int) (Math.random() * (((double) team[0].getForces() / (double) team[1].getForces())))) + " from " + team[1].getName());
                 outcome = OutcomeType.WIN;
             }
+            String[] options = {
+                    "Continue!", "Retreat!"
+            };
 
 
 
 
 
-            if(team[0].getForces() <=0){
+            if(team[0].getForces() <=0 && go){
 
                 outcome = OutcomeType.LOSE;
-<<<<<<< HEAD
-                team[0].kill(team[0].getForces());
-                SimulatorScreen.Stop();
-=======
                 System.out.println(team[0].kill(-1 * (int) Math.abs(team[0].getForces())));
                 go = false;
->>>>>>> origin/master
             }
-            if(team[1].getForces() <=0){
+            if(team[1].getForces() <=0 && go){
                 outcome = OutcomeType.WIN;
-<<<<<<< HEAD
-                team[1].kill(team[1].getForces());
-                SimulatorScreen.Stop();
-=======
                 System.out.println(team[1].kill(-1 * (int) Math.abs(team[1].getForces())));
                 go = false;
->>>>>>> origin/master
 
             }
             wins[winner]++;
             finalOutcome = new Outcome(outcome, team[0], wins[0], team[1], wins[1]);
             score = new int[2];
-            try{
-            Thread.sleep(100);}
-            catch(java.lang.InterruptedException e){
-
-            }
-
+        } while (go);
 
         return finalOutcome;
     }
